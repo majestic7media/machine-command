@@ -1,0 +1,37 @@
+[
+  {
+    "name": "ping",
+    "schedule": "*/5 * * * *",
+    "type": "command",
+    "command": "echo \"MACHINE COMMAND heartbeat OK — $(date)\"",
+    "enabled": true
+  },
+  {
+    "name": "daily-brief",
+    "schedule": "0 8 * * *",
+    "type": "agent",
+    "job": "Generate a morning brief for Ty. Read HEARTBEAT.md at B:\\TTT_MACHINE\\HEARTBEAT.md and the most recent daily log in B:\\TTT_MACHINE\\00_SYSTEM_MEMORY\\. Summarize: what's running, what needs attention, any open tasks. Keep it punchy — Ty has ADD, bullets not paragraphs. Save the brief to config/briefs/$(date +%d%m%y)_BRIEF_1.md and print a summary.",
+    "enabled": false
+  },
+  {
+    "name": "memory-consolidation",
+    "schedule": "0 22 * * *",
+    "type": "agent",
+    "job": "End-of-day memory consolidation for THE MACHINE. Read today's session logs and outputs. Identify key decisions, learnings, and updates. Append important items to B:\\TTT_MACHINE\\00_SYSTEM_MEMORY\\MEMORY_BULLETS.md. File naming: DDMMYY format only (e.g. 250226_DAILY_1.md). Never delete files.",
+    "enabled": false
+  },
+  {
+    "name": "workspace-health",
+    "schedule": "0 */4 * * *",
+    "type": "command",
+    "command": "echo \"Workspace health check — $(date)\" && ls B:\\TTT_MACHINE\\00_SYSTEM_CORE\\ 2>/dev/null || echo 'workspace path check skipped (Linux container)'",
+    "enabled": false
+  },
+  {
+    "name": "cleanup-logs",
+    "schedule": "0 0 * * 0",
+    "type": "command",
+    "command": "ls -la logs/",
+    "enabled": false
+  }
+]
