@@ -1,0 +1,5 @@
+{"type":"session","version":3,"id":"da17dcd6-8693-43f5-aeff-839ec3e2ebe6","timestamp":"2026-02-27T06:15:06.955Z","cwd":"/job"}
+{"type":"model_change","id":"977001b0","parentId":null,"timestamp":"2026-02-27T06:15:06.957Z","provider":"custom","modelId":"deepseek-ai/deepseek-v3.1"}
+{"type":"thinking_level_change","id":"53e25f9a","parentId":"977001b0","timestamp":"2026-02-27T06:15:06.957Z","thinkingLevel":"off"}
+{"type":"message","id":"a71874d4","parentId":"53e25f9a","timestamp":"2026-02-27T06:15:06.969Z","message":{"role":"user","content":[{"type":"text","text":"\n\n# Your Job\n\n"}],"timestamp":1772172906964}}
+{"type":"message","id":"56a692ee","parentId":"a71874d4","timestamp":"2026-02-27T06:30:10.598Z","message":{"role":"assistant","content":[],"api":"openai-completions","provider":"custom","model":"deepseek-ai/deepseek-v3.1","usage":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"totalTokens":0,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0}},"stopReason":"error","timestamp":1772172906966,"errorMessage":"Request timed out."}}
