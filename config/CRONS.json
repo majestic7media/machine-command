@@ -10,28 +10,28 @@
     "name": "daily-brief",
     "schedule": "0 8 * * *",
     "type": "agent",
-    "job": "Generate a morning brief for Ty. Read HEARTBEAT.md at B:\\TTT_MACHINE\\HEARTBEAT.md and the most recent daily log in B:\\TTT_MACHINE\\00_SYSTEM_MEMORY\\. Summarize: what's running, what needs attention, any open tasks. Keep it punchy — Ty has ADD, bullets not paragraphs. Save the brief to config/briefs/$(date +%d%m%y)_BRIEF_1.md and print a summary.",
-    "enabled": false
+    "job": "Generate a morning brief for THE MACHINE COMMAND. Check the logs/ directory for recent job activity. Read config/HEARTBEAT.md for system status. Summarize: what jobs ran recently, what's configured and running, any errors in job logs. Format as punchy bullets — Ty has ADD, bullets not paragraphs. Save the brief to logs/briefs/$(date +%d%m%y)_BRIEF_1.md and print the summary.",
+    "enabled": true
   },
   {
     "name": "memory-consolidation",
     "schedule": "0 22 * * *",
     "type": "agent",
-    "job": "End-of-day memory consolidation for THE MACHINE. Read today's session logs and outputs. Identify key decisions, learnings, and updates. Append important items to B:\\TTT_MACHINE\\00_SYSTEM_MEMORY\\MEMORY_BULLETS.md. File naming: DDMMYY format only (e.g. 250226_DAILY_1.md). Never delete files.",
-    "enabled": false
+    "job": "End-of-day consolidation for THE MACHINE COMMAND repo. Review today's job logs in logs/. Identify completed work, key decisions, errors, and learnings. Write a consolidation report to logs/consolidations/$(date +%d%m%y)_CONSOLIDATION_1.md with sections: COMPLETED JOBS, KEY LEARNINGS, ERRORS ENCOUNTERED, FOLLOW-UP NEEDED. File naming must use DDMMYY format. Never delete files.",
+    "enabled": true
   },
   {
     "name": "workspace-health",
     "schedule": "0 */4 * * *",
     "type": "command",
-    "command": "echo \"Workspace health check — $(date)\" && ls B:\\TTT_MACHINE\\00_SYSTEM_CORE\\ 2>/dev/null || echo 'workspace path check skipped (Linux container)'",
-    "enabled": false
+    "command": "echo \"Health check $(date): $(ls logs/ 2>/dev/null | wc -l) job dirs, config OK\"",
+    "enabled": true
   },
   {
-    "name": "cleanup-logs",
+    "name": "cleanup-old-logs",
     "schedule": "0 0 * * 0",
     "type": "command",
-    "command": "ls -la logs/",
+    "command": "echo \"Weekly log count: $(ls logs/ 2>/dev/null | wc -l) job directories\"",
     "enabled": false
   }
 ]
