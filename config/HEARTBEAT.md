@@ -4,7 +4,7 @@
 
 - **Event Handler:** localhost:3002 (thepopebot 1.2.72-beta.11)
 - **LLM Provider:** NVIDIA NIM (openai-compatible)
-- **LLM Model:** deepseek-ai/deepseek-r1
+- **LLM Model:** deepseek-ai/deepseek-v3.1
 - **GitHub Repo:** majestic7media/machine-command
 - **Pi Runner:** ubuntu-latest (GitHub-hosted)
 - **Auto-Merge:** enabled
