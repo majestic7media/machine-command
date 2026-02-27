@@ -2,8 +2,8 @@ import './globals.css';
 import { ThemeProvider } from './components/theme-provider';
 
 export const metadata = {
-  title: 'thepopebot',
-  description: 'AI Agent',
+  title: 'THE MACHINE™ COMMAND',
+  description: 'Celeste — AI Command Center for THE MACHINE',
 };
 
 export default function RootLayout({ children }) {
