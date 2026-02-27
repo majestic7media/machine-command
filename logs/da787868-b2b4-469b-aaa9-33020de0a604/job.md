@@ -1,0 +1,1 @@
+Pi agent beta.11 is operational with NVIDIA deepseek-v3.1.
