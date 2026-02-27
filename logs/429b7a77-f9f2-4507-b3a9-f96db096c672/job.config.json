@@ -1,0 +1,4 @@
+{
+  "title": "Write a simple status file to logs/pi-test/hello-machine.md that confirms: (1)",
+  "job": "Write a simple status file to logs/pi-test/hello-machine.md that confirms: (1) THE MACHINE COMMAND Pi agent is operational, (2) the LLM model configured is deepseek-ai/deepseek-r1 via NVIDIA NIM, (3) include the current UTC date/time. Keep it short — 5-10 lines max."
+}
