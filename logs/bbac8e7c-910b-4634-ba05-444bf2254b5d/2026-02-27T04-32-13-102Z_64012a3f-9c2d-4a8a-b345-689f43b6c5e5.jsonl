@@ -1,0 +1,5 @@
+{"type":"session","version":3,"id":"64012a3f-9c2d-4a8a-b345-689f43b6c5e5","timestamp":"2026-02-27T04:32:13.102Z","cwd":"/job"}
+{"type":"model_change","id":"69e5ab93","parentId":null,"timestamp":"2026-02-27T04:32:13.104Z","provider":"custom","modelId":"deepseek-ai/deepseek-r1"}
+{"type":"thinking_level_change","id":"52d23742","parentId":"69e5ab93","timestamp":"2026-02-27T04:32:13.104Z","thinkingLevel":"off"}
+{"type":"message","id":"1a18102c","parentId":"52d23742","timestamp":"2026-02-27T04:32:13.115Z","message":{"role":"user","content":[{"type":"text","text":"\n\n# Your Job\n\n"}],"timestamp":1772166733111}}
+{"type":"message","id":"2590ca7f","parentId":"1a18102c","timestamp":"2026-02-27T04:32:13.245Z","message":{"role":"assistant","content":[],"api":"openai-completions","provider":"custom","model":"deepseek-ai/deepseek-r1","usage":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"totalTokens":0,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0}},"stopReason":"error","timestamp":1772166733113,"errorMessage":"410 status code (no body)"}}
