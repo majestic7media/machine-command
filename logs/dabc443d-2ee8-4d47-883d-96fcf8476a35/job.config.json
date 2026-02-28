@@ -1,0 +1,4 @@
+{
+  "title": "Generate Morning Brief for THE MACHINE COMMAND",
+  "job": "Generate a morning brief for THE MACHINE COMMAND. Check the logs/ directory for recent job activity. Read config/HEARTBEAT.md for system status. Summarize: what jobs ran recently, what's configured and running, any errors in job logs. Format as punchy bullets — Ty has ADD, bullets not paragraphs. Save the brief to logs/briefs/$(date +%d%m%y)_BRIEF_1.md and print the summary."
+}
