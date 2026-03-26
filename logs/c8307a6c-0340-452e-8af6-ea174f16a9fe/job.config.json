@@ -1,0 +1,4 @@
+{
+  "title": "End-of-Day Job Log Consolidation Report Generation",
+  "job": "End-of-day consolidation for THE MACHINE COMMAND repo. Review today's job logs in logs/. Identify completed work, key decisions, errors, and learnings. Write a consolidation report to logs/consolidations/$(date +%d%m%y)_CONSOLIDATION_1.md with sections: COMPLETED JOBS, KEY LEARNINGS, ERRORS ENCOUNTERED, FOLLOW-UP NEEDED. File naming must use DDMMYY format. Never delete files."
+}
