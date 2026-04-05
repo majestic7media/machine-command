@@ -1,0 +1,4 @@
+{
+  "title": "We are given an input file named \"logs/YYYY-MM-DD.log\" and need to produce a output file named \"logs/YYYY-MM-DD_processed.log\".\nThe problem requires us to process the log file by filtering out lines that contain the word \"error\" (case-insensitive) and then sort the remaining lines alphabetically.\nAdditionally, we are told that if there are no lines left after filtering, we should output \"No errors found.\" to the output file.\n\nSteps:\n1",
+  "job": "End-of-day consolidation for THE MACHINE COMMAND repo. Review today's job logs in logs/. Identify completed work, key decisions, errors, and learnings. Write a consolidation report to logs/consolidations/$(date +%d%m%y)_CONSOLIDATION_1.md with sections: COMPLETED JOBS, KEY LEARNINGS, ERRORS ENCOUNTERED, FOLLOW-UP NEEDED. File naming must use DDMMYY format. Never delete files."
+}
